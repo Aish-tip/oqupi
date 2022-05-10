@@ -1,0 +1,72 @@
+#login{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+}
+h1{
+    text-align: center;
+    margin:0 !important;
+}
+#email,#password{
+    margin-bottom: 2%;
+    width: 100%;
+    padding: 1%;
+    border-radius: 10px
+}
+
+#submit{
+    margin: 1%;
+    position: relative;
+    top: 75%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width:100%;
+    background: #062f77;
+    padding: 10px;
+    border-radius: 10px;
+    color:#ffffff;
+    font-size:20px;
+}
+#register{
+    margin: 0;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.bg-img{
+    background-image: url(../../assets/Landing-page.png);
+    background-size: cover;
+    background-position-y: bottom;
+    height:747px;
+}
+@media screen  and (min-width:400px) 
+{
+    .bg-img{
+        height:915px;
+    } 
+    #submit{
+        position: absolute;
+        top:95%;
+        width:91%;
+        left:52%;
+    }
+    #register{
+        top:130%;
+    }
+    #email,#password{
+        padding:12px;
+    }
+    #login{
+        top:20%;
+        left:47%;
+    }
+    h1{
+        padding-top:5%;
+    }
+}
+    

@@ -1,0 +1,17 @@
+<h1></h1>
+<button (click)="getGameList()">Game List</button>
+<table class="table" id='tab'>
+  <thead>    
+  <tr *ngFor="let head of headers;">
+    <th>{{head.head[0]}}</th>    
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let gl of li;">
+      <td>{{ gl.id }}</td>
+      <td>{{ gl.gameName }}</td>
+      <td>{{ gl.gameType }}</td>
+      <td>{{ gl.description }}</td>
+  </tr>
+  </tbody>
+</table>

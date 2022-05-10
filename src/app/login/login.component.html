@@ -1,0 +1,18 @@
+<div class="bg-img">
+<h1>Welcome</h1>
+<div id="login">
+  <form [formGroup]="LoginForm" (ngSubmit)="onSubmit()">
+    <label for="email"></label>
+    <input id="email" type="text" formControlName="email" placeholder="email">
+  <br>
+    <label for="password"></label>
+    <input id="password" type="password" formControlName="password" placeholder="password">
+    <br>
+<button id="submit" type="submit">Submit</button>
+<br>
+<a routerLink="/register" id="register" target="_blank">Don't have an account? Sign Up</a>
+  </form>
+</div>
+</div>
+<router-outlet></router-outlet>
+  
